@@ -78,5 +78,13 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+app.get("/api/about", (req, res) => {
+  res.json({
+      name: "June Li",
+      bio: "Hi! My name is June. I'm passionate about exploring the world, meeting new people, and delving into different cultures. I love learning about new technologies and how they shape the world around us. Whether it's discovering new places or diving into the latest tech trends, I'm always eager to embrace new experiences and challenges.",
+      photoUrl: "/photo.jpeg" 
+  });
+});
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
