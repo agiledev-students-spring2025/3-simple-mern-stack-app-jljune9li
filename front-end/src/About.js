@@ -27,7 +27,7 @@ const About = () => {
             <h2>{aboutData.name}</h2>
     
             {/* Bio */}
-            <p style={{ fontSize: "18px", lineHeight: "1.6" }}>{aboutData.bio}</p>
+            <p style={{ fontSize: "16px", lineHeight: "1.6" }}>{aboutData.bio}</p>
         </div>
     );
 };
